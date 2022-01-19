@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="yoakstudios" />
+    <meta
+      name="description"
+      content="Building Financial Goals with Confidence!"
+    />
+    <meta
+      name="keywords"
+      content="crypto, bitcoin, investment, ethereum, litecoin"
+    />
+    <meta name="”robots”" content="”noindex," nofollow” />
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="pennyTree" />
+    <meta
+      property="og:description"
+      content="Building Financial Goals with Confidence!"
+    />
+    <meta
+      property="og:image"
+      content="https://mypennytree.com/assets/images/favicon.ico"
+    />
+    <meta property="og:url" content="https://mypennytree.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:site_name" content="pennyTree" />
+    <meta name="twitter:image:alt" content="pennyTree logo" />
+
+    <!--  Non-Essential, But Required for Analytics -->
+    <meta property="fb:app_id" content="your_app_id" />
+    <meta name="twitter:site" content="@website-username" />
+
+    <title>pennyTree - Building Financial Goals with Confidence!</title>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://mypennytree.com/" />
+
+    <!-- ########## CSS LINKS ########## -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="login-bg">
+      <div class="login-form">
+        <a href="./"
+          ><img src="assets/images/logo.png" alt="" class="login-logo"
+        /></a>
+        <h3>Blog Login</h3>
+        <form action="" method="post">
+          <div class="err-msg"></div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" />
+            <div class="eye-toggler">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                id="closed"
+              >
+                <path
+                  d="M19.604 2.562l-3.346 3.137c-1.27-.428-2.686-.699-4.243-.699-7.569 0-12.015 6.551-12.015 6.551s1.928 2.951 5.146 5.138l-2.911 2.909 1.414 1.414 17.37-17.035-1.415-1.415zm-6.016 5.779c-3.288-1.453-6.681 1.908-5.265 5.206l-1.726 1.707c-1.814-1.16-3.225-2.65-4.06-3.66 1.493-1.648 4.817-4.594 9.478-4.594.927 0 1.796.119 2.61.315l-1.037 1.026zm-2.883 7.431l5.09-4.993c1.017 3.111-2.003 6.067-5.09 4.993zm13.295-4.221s-4.252 7.449-11.985 7.449c-1.379 0-2.662-.291-3.851-.737l1.614-1.583c.715.193 1.458.32 2.237.32 4.791 0 8.104-3.527 9.504-5.364-.729-.822-1.956-1.99-3.587-2.952l1.489-1.46c2.982 1.9 4.579 4.327 4.579 4.327z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                id="opened"
+              >
+                <path
+                  d="M12.015 7c4.751 0 8.063 3.012 9.504 4.636-1.401 1.837-4.713 5.364-9.504 5.364-4.42 0-7.93-3.536-9.478-5.407 1.493-1.647 4.817-4.593 9.478-4.593zm0-2c-7.569 0-12.015 6.551-12.015 6.551s4.835 7.449 12.015 7.449c7.733 0 11.985-7.449 11.985-7.449s-4.291-6.551-11.985-6.551zm-.015 3c-2.209 0-4 1.792-4 4 0 2.209 1.791 4 4 4s4-1.791 4-4c0-2.208-1.791-4-4-4z"
+                />
+              </svg>
+            </div>
+          </div>
+          <p>
+            <a href="" class="forgot-password">Forgot your password?</a>
+          </p>
+          <button type="button" class="login-btn">Login</button>
+        </form>
+      </div>
+    </header>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+    <script>
+      $(".eye-toggler #opened").hide();
+
+      $(".eye-toggler").click(function () {
+        let input = $("#password");
+
+        if (input.attr("type") === "password") {
+          input.attr("type", "text");
+          $(".eye-toggler #opened").show();
+          $(".eye-toggler #closed").hide();
+        } else {
+          input.attr("type", "password");
+          $(".eye-toggler #opened").hide();
+          $(".eye-toggler #closed").show();
+        }
+      });
+    </script>
+  </body>
+</html>
