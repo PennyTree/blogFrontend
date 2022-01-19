@@ -172,7 +172,7 @@ img {
   color: #14b8a6;
 }
 .nav-search {
-  background: #ffffff url("../images/search-icon.svg") no-repeat 96%;
+  background: #f3f4f6 url("../images/search-icon.svg") no-repeat 96%;
   margin-left: auto;
   padding: 10px 15px;
   border: 1px solid #555555;
@@ -1008,3 +1008,40 @@ footer a:hover {
   }
 }
 /* ########## HomePage Screen End ########## */
+.createPost input,
+.createPost textarea,
+.createPost select,
+.postImage {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #797979;
+  padding: 10px 15px;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.createPost select,
+.postImage {
+  font-size: 14px;
+}
+.createPost textarea {
+  font-size: 18px;
+  min-height: 350px;
+}
+input[type="file"] {
+  display: none;
+}
+.postImage {
+  cursor: pointer;
+}
+#postImagePreview {
+  display: none;
+  height: 250px;
+  width: auto;
+}
+.publishPost {
+  background-color: #14b8a6;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
